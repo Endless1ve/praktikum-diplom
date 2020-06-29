@@ -1,12 +1,6 @@
 @import url("./__text/cards__text.css");
 @import url("./__content/cards__content.css");
 @import url("./__button/cards__button.css");
-@import url("./__content-author/cards__content-author.css");
-@import url("./__content-card/cards__content-card.css");
-@import url("./__content-date/cards__content-date.css");
-@import url("./__content-image/cards__content-image.css");
-@import url("./__content-text/cards__content-text.css");
-@import url("./__content-title/cards__content-title.css");
 
 .cards{
     padding: 80px 0;
