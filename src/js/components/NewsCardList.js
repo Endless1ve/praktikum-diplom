@@ -45,7 +45,6 @@ export default class NewsCardList{
     })
     .finally(() => {
         search.inputUnlock();
-        
     });
    }
 
@@ -55,7 +54,7 @@ export default class NewsCardList{
                 newsCard.create(news[i].title, news[i].urlToImage, news[i].url, news[i].description, news[i].publishedAt, news[i].source.name);
            }
        }
-       showMoreCardsButton(news.lenght, this.startNews);
+       showMoreCardsButton(news.length, this.startNews);
    }
 
    renderMore(news){
