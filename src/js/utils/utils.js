@@ -14,9 +14,9 @@ export function renderLoader(isLoading){
 
 export function showMoreCardsButton(cards, counter){
     if(counter + 3 >= cards){
-        SHOW_MORE_CARDS_BUTTON.classList.remove('.cards__button-active');
+        SHOW_MORE_CARDS_BUTTON.setAttribute('style', 'display:none');
     }
     else{
-        SHOW_MORE_CARDS_BUTTON.classList.add('.cards__button-active');
+        SHOW_MORE_CARDS_BUTTON.setAttribute('style', 'display:block');
     }
 }
