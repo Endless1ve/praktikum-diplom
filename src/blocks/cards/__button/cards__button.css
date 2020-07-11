@@ -16,3 +16,9 @@
     cursor: pointer;
     opacity: 0.9;
 }
+
+.button-container{
+    width: 288px;
+    height: 64px;
+    margin: 0 auto;
+}

@@ -23,16 +23,20 @@
       <h1 class="header__search-title">Что в мире творится?</h1>
       <p class="header__search-text">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за
         прошедшую неделю.</p>
-      <div class="header__search-block">
-        <input type="text" class="header__search-input" placeholder="Введите тему новости" required>
+      <form class="header__search-block" name="search">
+        <input type="text" class="header__search-input" placeholder="Введите тему новости">
+        <span class="input-error">Нужно ввести ключевое слово</span>
         <button class="header__search-button">Искать</button>
-      </div>
+      </form>
     </div>
   </header>
   <section class="message">
     <img src="<%=require('./images/not-found.svg')%>" alt="Ошибка" class="message__image">
     <h3 class="message__title">Ничего не найдено</h3>
     <p class="message__text">К сожалению по вашему запросу ничего не найдено.</p>
+  </section>
+  <section class="error-message" style="display: none;">
+    <p class="error-text">Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз.</p>
   </section>
   <section class="preloader">
     <i class="preloader__circle"></i>
@@ -44,62 +48,8 @@
       <a href="./analytics.html" class="cards__text-link">Посмотреть аналитику &#8250;</a>
     </div>
     <div class="cards__content">  
-      <div class="card">
-        <img src="<%=require('./images/cardImage.png')%>" alt="Картинка" class="card-image">
-        <p class="card-date">2 августа, 2019</p>
-        <h3 class="card-title">Национальное достояние – парки</h3>
-        <p class="card-text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться 
-          система национальных парков – охраняемых территорий, 
-          где и сегодня каждый может приобщиться к природе.</p>
-        <p class="card-author">Лента.ру</p>
-      </div>
-      <div class="card">
-        <img src="<%=require('./images/cardImage.png')%>" alt="Картинка" class="card-image">
-        <p class="card-date">2 августа, 2019</p>
-        <h3 class="card-title">Национальное достояние – парки</h3>
-        <p class="card-text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться 
-          система национальных парков – охраняемых территорий, 
-          где и сегодня каждый может приобщиться к природе.</p>
-        <p class="card-author">Лента.ру</p>
-      </div>
-      <div class="card">
-        <img src="<%=require('./images/cardImage.png')%>" alt="Картинка" class="card-image">
-        <p class="card-date">2 августа, 2019</p>
-        <h3 class="card-title">Национальное достояние – парки</h3>
-        <p class="card-text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться 
-          система национальных парков – охраняемых территорий, 
-          где и сегодня каждый может приобщиться к природе.</p>
-        <p class="card-author">Лента.ру</p>
-      </div>
-      <div class="card">
-        <img src="<%=require('./images/cardImage.png')%>" alt="Картинка" class="card-image">
-        <p class="card-date">2 августа, 2019</p>
-        <h3 class="card-title">Национальное достояние – парки</h3>
-        <p class="card-text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться 
-          система национальных парков – охраняемых территорий, 
-          где и сегодня каждый может приобщиться к природе.</p>
-        <p class="card-author">Лента.ру</p>
-      </div>
-      <div class="card">
-        <img src="<%=require('./images/cardImage.png')%>" alt="Картинка" class="card-image">
-        <p class="card-date">2 августа, 2019</p>
-        <h3 class="card-title">Национальное достояние – парки</h3>
-        <p class="card-text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться 
-          система национальных парков – охраняемых территорий, 
-          где и сегодня каждый может приобщиться к природе.</p>
-        <p class="card-author">Лента.ру</p>
-      </div>
-      <div class="card">
-        <img src="<%=require('./images/cardImage.png')%>" alt="Картинка" class="card-image">
-        <p class="card-date">2 августа, 2019</p>
-        <h3 class="card-title">Национальное достояние – парки</h3>
-        <p class="card-text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться 
-          система национальных парков – охраняемых территорий, 
-          где и сегодня каждый может приобщиться к природе.</p>
-        <p class="card-author">Лента.ру</p>
-      </div>
     </div>
-    <button class="cards__button">Показать еще</button>
+    <div class="button-container"><button class="cards__button">Показать еще</button></div>
   </section>
   <section class="author">
     <img class="author__image" src="<%=require('./images/author.png')%>" alt="автор">

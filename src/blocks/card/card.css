@@ -6,7 +6,8 @@
 .card{
     border-radius: 10px;
     background: #FFFFFF;
-    width: 100%;
+    max-width: 400px;
+    text-decoration: none;
 }
 
 @media screen and (min-width : 320px) and (max-width : 767px){
