@@ -4,7 +4,7 @@ export default class NewsApi {
     }
 
     getNews(request, fromDate, toDate){
-        return fetch(`https://praktikum.tk/news/v2/everything?q=${request}&from=${fromDate}&to=${toDate}&sortBy=popularity&pageSize=100&apiKey=${this.key}`)
+        return fetch(`http://newsapi.org/v2/everything?q=${request}&from=${fromDate}&to=${toDate}&sortBy=popularity&pageSize=100&apiKey=${this.key}`)
         .then(res => {
             if(res.ok){
                 return Promise.resolve(res.json());
