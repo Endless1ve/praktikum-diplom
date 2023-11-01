@@ -1,5 +1,5 @@
 //NewsApi
-export const NEWS_KEY = '97b7f9eb48c34d13a7461ddeb9126240';
+export const NEWS_KEY = '62c9a6e8890849328a72ca82e14e0097';
 
 //gitHub Api
 export const GIT_URL = 'https://api.github.com/repos';
